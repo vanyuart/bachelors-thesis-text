@@ -1,0 +1,56 @@
+\documentclass[twoside]{ctuthesis}
+
+\ctusetup{
+xdoctype = B,
+xfaculty = F3,
+mainlanguage = english,
+titlelanguage = english,
+title-english = {Application for personal developmenttt},
+title-czech = {Aplikace pro podporu osobního rozvoje},
+keywords-english = {word, key},
+keywords-czech = {slovo, klíč},
+author = {Artem Vanyukhin},
+supervisor = {Ing. Pavel Náplava, Ph.D.},
+fieldofstudy-english = {Software Engineering and Technology},
+day = 1,
+month = 5,
+year = 2021,
+}
+
+\ctuprocess
+
+\begin{thanks}
+    Thanks\ldots
+\end{thanks}
+
+\begin{declaration}
+    I  hereby  declare\ldots
+
+    In Prague on \monthinlanguage{title} \ctufield{day}, \ctufield{year}
+\end{declaration}
+
+\begin{abstract-english}
+    The purose  \ldots
+\end{abstract-english}
+
+\begin{abstract-czech}
+    Cíl \ldots
+\end{abstract-czech}
+
+\begin{document}
+
+    \maketitle
+    \input{chapters/introduction.tex}
+    \input{chapters/chapter02.tex}
+    \input{chapters/chapter03.tex}
+    \input{chapters/conclusion.tex}
+    \input{chapters/appendix.tex}
+
+    \bibliographystyle{amsalpha}
+    \begin{thebibliography}{doe}
+
+        \bibitem{doe} J. Doe. \emph{Book on foobar.} Publisher X, 2300.
+        \bibitem{doo} J. Doo. \emph{Book on foobarrr.} Publisher Y, 2301.
+    \end{thebibliography}
+\end{document}
+
