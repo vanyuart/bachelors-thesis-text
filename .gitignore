@@ -1,6 +1,6 @@
 #IDEA
 .idea/**
-out/**
+/out/**
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
