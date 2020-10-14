@@ -2,5 +2,44 @@
 
 \section{Data collection}\label{sec:data-collection}
 
+Data collection was done using Google search engine.
+The first step was to find applications using following keywords: "personal development apps", "habit tracker", "self improvement apps".
+The top five pages for each keyword were used to gain initial dataset.
+The next step was to manually filter gathered data.
+The first step of filtration was to manually remove duplicates.
+The second step was to remove activity specific applications: sport, meditation, brain training.
+The third step was to remove applications with static textual content on topics of psychology, personal development and life improvement techniques.
+The fourth step was to remove applications aimed exclusively at personal care, skincare, mood journals and sleep journals.
+The fifth step was to remove business and productivity applications aimed primarily at small scale time management, short-term goals and daily productivity.
+The sixth step was to remove applications aimed strongly at bad habits breaking, such as smoking and drinking.
+The seventh step was to remove applications available for single platform exclusively, e.g., iOS\@.
+The last step was to remove applications that provide very similar interface, user experience and functionality.
 
+\begin{table}
+    \centering
+    \begin{adjustbox}{width=\textwidth + 1}
+        \begin{ctucolortab}
+            \begin{tabular}{llllll}
+                \bfseries Action & \bfseries K1 & \bfseries K2 & \bfseries K3 & \bfseries Difference & \bfseries Total results \\\Midrule
+                Initial dataset & 52 & 38 & 62 & +152 & 152\\
+                Duplicates & 46 & 25 & 23 & -58 & 94\\
+                Sport oriented & 41 & 23 & 22 & -8 & 86\\
+                Meditation oriented & 38 & 19 & 19 & -10 & 76\\
+                Brain training oriented & 25 & 16 & 18 & -17 & 59\\
+                Topics oriented & 15 & 16 & 10 & -18 & 41\\
+                Personal care oriented & 5 & 11 & 7 & -18 & 23\\
+                Business and productivity oriented & 4 & 11 & 5 & -3 & 20\\
+                Bad habits oriented & 4 & 10 & 1 & -5 & 15\\
+                Single platform & 2 & 6 & 1 & -6 & 9\\
+                Similar applications & 2 & 4 & 1 & -2 & 7\\
+                \bottomrule
+                \multicolumn{6}{1}{K1="Personal development apps", K2="Habit tracker", K3="Self improvement apps"}
+            \end{tabular}
+        \end{ctucolortab}
+    \end{adjustbox}
+    \caption{Dataset filtering.}
+    \label{tab:dataset-filtering}
+\end{table}
 
+Details of dataset filtering process are described in Table 3.1.
+The result of filtering is 7 applications that will be analyzed in details in the next section.
