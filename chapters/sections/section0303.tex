@@ -1,7 +1,9 @@
 %!TEX ROOT=main.tex
 \section{Data analysis}\label{sec:data-analysis}
 
-Following 7 applications will be tested and analyzed in this section: Uloo, Habitica, Habitify, TickTick, Habitshare, Remente and Coach.me.
+Following 5 applications will be tested and analyzed in this section: Uloo, Habitica, Habitify, TickTick, Habitshare.
+%Remente and Coach.me.
+Android and PlayMarket is going to be used as a testing platform.
 
 \subsection{Uloo}\label{subsec:uloo}
 
@@ -13,7 +15,7 @@ Following 7 applications will be tested and analyzed in this section: Uloo, Habi
 
 Uloo is a goal pursuing application.
 Some of it features are goals setting, progress tracking, communication between users, common and private goals tracking and paid mentoring by coaches.
-That multiplatform application covers all of the set criteria.
+%That multiplatform application covers all of the set criteria.
 As for the downsides application is not usable without a paid premium subscription as all functions are very limited in a free version.
 Even with a premium it is not possible to create own goals.
 A core feature, that is goal progress tracking, demonstrated breaking bug during the test of functionalities.
@@ -27,8 +29,9 @@ A core feature, that is goal progress tracking, demonstrated breaking bug during
                 \bfseries Pros & \bfseries Cons\\\Midrule
                 Can start discovering without an account & Unusable without a paid premium\\
                 Fair UI/UX & Only predefined goals\\
-                Time or count as a progress measurement & Squad size limited to 8\\
-                Squads for goals pursuing in teams & Small amount of installs and reviews\\
+                Time or count as & Squad size limited to 8\\
+                progress measurement & Small amount of \\
+                Squads for goals pursuing in teams & installs and reviews\\
                 Chat in squads & Bugs and unstable behaviour\\
             \end{tabular}
         \end{ctucolortab}
@@ -36,10 +39,10 @@ A core feature, that is goal progress tracking, demonstrated breaking bug during
     \caption{Uloo pros and cons.}\label{tab:uloo-pros-cons}
 \end{table}
 
-At the time of writing Uloo had between 1,000--2,000 installs and 28 reviews with a score 4/5 on PlayMarket.
-It is fair to say that Uloo is new on the market.
-It has good features that should be captured in the future application.
-Relatively expensive subscription, extremely limited experience with free version and small market share creates a space for another application.
+At the time of writing Uloo had between 1,000--2,000 installs and 28 reviews with an average score 4.2 out of 5 on PlayMarket.
+%It is fair to say that Uloo is new on the market.
+Uloo's implementation of progress sharing and squads might serve as an inspiration.
+%Relatively expensive mandatory subscription and questionable quality, extremely limited experience with free version and small market share creates a space for another application.
 
 
 \subsection{Habitica}\label{subsec:habitica}
@@ -64,17 +67,20 @@ especially those who are not into video games.
     \begin{ctucolortab}
         \begin{tabular}{cc}
             \bfseries Pros & \bfseries Cons\\\Midrule
-            Great UI/UX & May be too much of gamification for some\\
-            Many free features & Not suitable for long-term goals\\
-            Gamification & \\
+            Great UI/UX & May be too much of gamification \\
+            Many free features & for some users \\
+            Gamification & Not suitable for long-term goals \\
+            Social features & \\
         \end{tabular}
     \end{ctucolortab}
     \caption{Habitica pros and cons.}\label{tab:habitica-pros-cons}
 \end{table}
 
-At the time of writing Habitica had over 1,000,000 installs and 17,334 reviews with a score 4/5 on PlayMarket.
+At the time of writing Habitica had over 1,000,000 installs and 17,334 reviews with an average score of 4.4 out of 5 on PlayMarket.
 Habitica is a well developed application with a large user base.
 Core idea of Habitica is to convert daily routine into a game, which is a feature that should not work for everyone.
+Habitica's aim at gamification and overall UI makes it irrelevant in terms of the future application design.
+On the other hand, it shows importance of possibility to interact between users which is a great part of Habitica.
 
 
 \subsection{Habitify}\label{subsec:habitify}
@@ -85,21 +91,28 @@ Core idea of Habitica is to convert daily routine into a game, which is a featur
     \label{fig:habitify-logo}
 \end{figure}
 
-Habitify description
+Habitify describes itself as a data-driven habit tracker.
+It provides strong data visualization and activity planning features.
+Another strong feature is synchronization with multiple devices as smartwatch and integration with health applications.
+Application does not provide social elements and UI might have been more interesting.
+The biggest problem is a very limited functionality of the free version.
 
 \begin{table}[h!]
     \centering
     \begin{ctucolortab}
         \begin{tabular}{cc}
             \bfseries Pros & \bfseries Cons\\\Midrule
-            One & Two\\
-            Three & \\
+            Data visualization & Social element is missing\\
+            Devices synchronization & Unusable without a paid premium\\
+            Health applications integration & Unengaging UI \\
         \end{tabular}
     \end{ctucolortab}
     \caption{Habitify pros and cons.}\label{tab:habitify-pros-cons}
 \end{table}
 
-Habitify summary
+At the time of writing Habitify had over 100,000 installs and 1,137 reviews with an average score 3.9 out of 5 on PlayMarket.
+Data visualization in this applications serves as a good inspiration.
+On the other hand, UI is an example of minimalistic approach done wrong with an overall boring and empty feel.
 
 
 \subsection{TickTick}\label{subsec:ticktick}
@@ -110,78 +123,93 @@ Habitify summary
     \label{fig:ticktick-logo}
 \end{figure}
 
-TickTick description
+TickTick is an activity planner application.
+It provides lists, reminders and calendars as tools for activity planning.
+It is also possible to share lists between users.
+TickTick does not designed as personal development application, but rather might be used as one.
+Variety of functions and fields creates more work for a user in order to actually start the process of personal development.
 
 \begin{table}[h!]
     \centering
     \begin{ctucolortab}
         \begin{tabular}{cc}
             \bfseries Pros & \bfseries Cons\\\Midrule
-            Usable without an account & Two\\
-            Shared lists & Two\\
-            Three & \\
-            Three & \\
+            Usable without an account & Large amount of typing \\
+            Shared lists & Too many options \\
+            Good UI & for data management \\
+             & Questionable UX \\
+             & for personal development \\
         \end{tabular}
     \end{ctucolortab}
-    \caption{TickTick pros and cons.}\label{tab:tickTick-pros-cons}
+    \caption{TickTick pros and cons.}\label{tab:ticktick-pros-cons}
 \end{table}
 
-TickTick summary
+At the time of writing TickTick had over 1,000,000 installs and 67,692 reviews with an average score 4.6 out of 5 on PlayMarket.
+Despite being a well received application for activity planning, it is not the best option for personal development.
+Giving too much freedom and functions to a user might severe usability of an application and should be avoided.
 
 
 \subsection{Habitshare}\label{subsec:habitshare}
 
-Habitshare description
+\begin{figure}[h!]
+    \includegraphics[width=0.20\textwidth]{images/habitshare-logo.png}
+    \caption{Habitshare logo.\cite{habitshare-logo}}
+    \label{fig:habitshare-logo}
+\end{figure}
+
+Habitshare describes itself a social habit tracker.
+It utilizes users social circle for extra accountability.
+
 
 \begin{table}[h!]
     \centering
     \begin{ctucolortab}
         \begin{tabular}{cc}
             \bfseries Pros & \bfseries Cons\\\Midrule
-            One & Two\\
-            Three & \\
+            Highly social & Not usable without an account\\
+            Usable without paying & Aimed at habits\\
+            Usable without paying & \\
         \end{tabular}
     \end{ctucolortab}
     \caption{Habitify pros and cons.}\label{tab:habitshare-pros-cons}
 \end{table}
 
-TickTick summary
+At the time of writing Habitshare had over 100,000 installs and 658 reviews with an average score 4.5 out of 5 on PlayMarket.
 
-
-\subsection{Remente}\label{subsec:remente}
-
-Remente description
-
-\begin{table}[h!]
-    \centering
-    \begin{ctucolortab}
-        \begin{tabular}{cc}
-            \bfseries Pros & \bfseries Cons\\\Midrule
-            One & Two\\
-            Three & \\
-        \end{tabular}
-    \end{ctucolortab}
-    \caption{Habitify pros and cons.}\label{tab:remente-pros-cons}
-\end{table}
-
-Remente summary
-
-
-\subsection{Coach.me}\label{subsec:coachme}
-
-Coach.me description
-
-\begin{table}[h!]
-    \centering
-    \begin{ctucolortab}
-        \begin{tabular}{cc}
-            \bfseries Pros & \bfseries Cons\\\Midrule
-            One & Two\\
-            Three & \\
-        \end{tabular}
-    \end{ctucolortab}
-    \caption{Coach.me pros and cons.}\label{tab:coachme-pros-cons}
-\end{table}
-
-Coach.me summary
+%\subsection{Remente}\label{subsec:remente}
+%
+%Remente description
+%
+%\begin{table}[h!]
+%    \centering
+%    \begin{ctucolortab}
+%        \begin{tabular}{cc}
+%            \bfseries Pros & \bfseries Cons\\\Midrule
+%            One & Two\\
+%            Three & \\
+%        \end{tabular}
+%    \end{ctucolortab}
+%    \caption{Habitify pros and cons.}\label{tab:remente-pros-cons}
+%\end{table}
+%
+%Remente summary
+%
+%
+%\subsection{Coach.me}\label{subsec:coachme}
+%
+%Coach.me description
+%
+%\begin{table}[h!]
+%    \centering
+%    \begin{ctucolortab}
+%        \begin{tabular}{cc}
+%            \bfseries Pros & \bfseries Cons\\\Midrule
+%            One & Two\\
+%            Three & \\
+%        \end{tabular}
+%    \end{ctucolortab}
+%    \caption{Coach.me pros and cons.}\label{tab:coachme-pros-cons}
+%\end{table}
+%
+%Coach.me summary
 
