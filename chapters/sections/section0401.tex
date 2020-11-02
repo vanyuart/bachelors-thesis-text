@@ -2,3 +2,27 @@
 
 \section{Domain model}\label{sec:domain-model}
 
+This section will describe entities of an application domain model in details.
+
+\subsection{User}\label{subsec:user}
+
+User entity consists of a minimum required attributes in order to simplify registration process for end-user.
+Recursive relation represents friendship between users, which is required for activity sharing.
+Goal plans, goals and habits are always owned by one user and might be shared with many users.
+Sharing is used for displaying private plans, goals and habits with specific users.
+
+\subsection{Goal plan}\label{subsec:goal-plan}
+
+Goal plan serves as a blueprint for a goal.
+This separation of plan and goal allows users create and share not only their progress, but also plans themselves.
+Possible use case would be the following.
+A user is proficient in specific field or skill that other users would like to learn or gain.
+They create a goal plan with tasks that contains instructions and share it with any amount of users.
+Other users then able to start goal pursuing process using this shared plan.
+
+\subsection{Goal}\label{subsec:goal}
+
+Goal is a tool for pursuing and progress tracking of a long-term target.
+It is also a specific case of fulfilling a goal plan that is created by user or shared with them.
+
+
