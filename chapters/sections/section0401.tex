@@ -3,6 +3,8 @@
 \section{Domain model}\label{sec:domain-model}
 
 This section will describe entities of an application domain model in details.
+Some technical information, as data types, are omitted for brevity.
+Each entity will have information about creation date, modification date etc.
 
 \subsection{User}\label{subsec:user}
 
@@ -22,7 +24,43 @@ Other users then able to start goal pursuing process using this shared plan.
 
 \subsection{Goal}\label{subsec:goal}
 
-Goal is a tool for pursuing and progress tracking of a long-term target.
+Goal is a tool for managing long-term targets.
 It is also a specific case of fulfilling a goal plan that is created by user or shared with them.
 
+\subsection{Task}\label{subsec:task}
 
+Task is a building block for a goal.
+Task completion used for calculation of a goal progress.
+
+\subsection{Goal daily progess}\label{subsec:goal-daily-progess}
+
+This entity holds data about daily progress on a specific goal.
+It is then used for statistics calculation.
+
+\subsection{Habit}\label{subsec:habit}
+
+Habit is a tool for managing simple and repetitive targets.
+
+\subsection{Habit schedule}\label{subsec:habit-schedule}
+
+Each habit has a schedule.
+At first it filled with default values, but it is possible for users to change them.
+
+\subsection{Habit reminder}\label{subsec:habit-reminder}
+
+Habit reminder\ldots
+
+\subsection{Habit daily progress}\label{subsec:habit-daily-progress}
+
+This entity holds data about daily progress on a specific habit.
+It is then used for statistics calculation.
+
+\subsection{Activity}\label{subsec:activity}
+
+This entity holds data about user activities on goals and habits.
+When goal or habit shared with user, he will see related activities.
+
+\subsection{Comment}\label{subsec:comment}
+
+It is possible to comment of activities in application and reply to commentaries.
+Everyone who has access to an activity could see all the commentaries.
