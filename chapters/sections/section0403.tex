@@ -1,4 +1,41 @@
 %!TEX ROOT=main.tex
 
-\section{Software architecture}\label{sec:software-architecture}
-{\color{gray} High-level diagram of software components.}
+\section{Functional requirements}\label{sec:functional-requirements}
+
+This section will introduced requirements regarding the application functionalities.
+
+Requirements have their priority estimation.
+High priority feature is a "must have" and necessarily needed in the application.
+Medium priority feature is a "nice to have" and should be implemented for the best user experience.
+Low priority feature is a "might have" which takes user experience level even further.
+
+Complexity estimation is relative.
+Medium might be considered as average time to implement a feature.
+Low complexity level requirements takes noticeably shorter period of time to implement them.
+High complexity level requirements as the opposite will take longer period of time.
+
+\subsection{User registration and login}\label{subsec:user-registration-and-login}
+\textbf{Complexity:} High\\
+\textbf{Priority:} High\\
+\textbf{Description:} In order to safely store and access users data in the cloud, user has register and login into the application.\\
+\textbf{Note:} This requirement carries the need for thorough security configuration.
+
+
+\subsection{User login with a facebook account}\label{subsec:user-login-with-facebook-account}
+\textbf{Complexity:} High\\
+\textbf{Priority:} Medium\\
+\textbf{Description:} In order eliminate registration process for a user.
+\textbf{Note:} Meeting the Facebook's security criteria might take additional effort.
+
+
+\subsection{Application is usable without a registration}\label{subsec:application-is-usable-without-registration}
+\textbf{Complexity:} High\\
+\textbf{Priority:} Medium\\
+\textbf{Description:} In order to give user chance to try it as simple as possible.
+\textbf{Note:} This requirement will take large amount of time for analysis and will increase overall complexity of the system.
+
+
+\subsection{Habits management}\label{subsec:habits-management}
+\textbf{Complexity:} Medium\\
+\textbf{Priority:} High\\
+\textbf{Description:} In order to safely store and access users data in the cloud.
