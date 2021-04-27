@@ -13,8 +13,8 @@ Compilation to Java allows to use any Java library while using Kotlin.
 There are many reasons to use Kotlin over Java.
 One of them is the null safety.
 Another is the strong influence of functional programming, which brings convenient features such as scope functions, high order functions and lambda expressions.
-Since Kotlin compiles into Java it provides same performance while significantly reduces boilerplate code.
-Consider following snippet written in Java.\\
+Since Kotlin compiles to Java code it provides the same performance while significantly reduces boilerplate code.
+Following code snippet is written in Java.\\
 
 \begin{Verbatim}[frame=single]
 public class Person {
@@ -44,12 +44,23 @@ public class Person {
 }
 \end{Verbatim}
 
-Kotlin equivalent for that snipped would be following.\\
+Kotlin equivalent for that snipped would be the following.\\
 \begin{Verbatim}[frame=single]
 class Person(var firstName: String, var lastName: String)
 \end{Verbatim}
 
 \subsection{Frontend}\label{subsec:ts-frontend}
 
-React was selected as frontend framework with Material-UI as a design library.\cite{react, material}
-React positions itself as a UI library, which means further libraries such as Axios (client-server communication) and Redux (state management) might be needed.\cite{axios, redux}
+React was selected as a frontend framework with Material-UI as a design library.\cite{react, material}
+React is developed by Facebook and positions itself as a UI library, which means further libraries such as Axios (client-server communication) and Redux (state management) might be needed.\cite{axios, redux}
+Material-UI is a library with React components built according to Google's UI design guidelines.
+
+TypeScript was also considered as frontend technology but idea was dismissed because of insufficient time resources.
+Benefit of TypeScript is strong typing which JavaScript lacks.\cite{typescript}
+
+\subsection{Deployment}\label{subsec:ts-deployment}
+
+Heroku cloud platform was selected as a deployment option.
+Simple, minimalistic interface and straightforward deployment via CLI are the benefits over Amazon AWS or Google Cloud.
+Pricing is affordable only for proofs of concept, MVPs and small projects.
+Heroku is not the best choice for large application or high throughput application as the pricing goes 2 to 3 times more expensive than with Amazon AWS\@.
