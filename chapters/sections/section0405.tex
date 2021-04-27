@@ -1,6 +1,55 @@
 %!TEX ROOT=main.tex
 
 \section{Technological stack}\label{sec:technological-stack}
-%{\color{gray} High-level diagram of software components.}
 
-Tech stack
+Technological stack was considered with developer experience and free of use in mind.
+Popularity, community and performance were also taken into account.
+
+\subsection{Server side}\label{subsec:ts-server-side}
+
+Kotlin with Spring framework was selected as server side language and PostreSQL as database.\cite{kotlin, spring, postgresql}
+Kotlin is a modern programming language that compiles to Java.
+Compilation to Java allows to use any Java library while using Kotlin.
+There are many reasons to use Kotlin over Java.
+One of them is the null safety.
+Another is the strong influence of functional programming, which brings convenient features such as scope functions, high order functions and lambda expressions.
+Since Kotlin compiles into Java it provides same performance while significantly reduces boilerplate code.
+Consider following snippet written in Java.\\
+
+\begin{Verbatim}[frame=single]
+public class Person {
+    private String firstName;
+    private String lastName;
+
+    public Person(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+}
+\end{Verbatim}
+
+Kotlin equivalent for that snipped would be following.\\
+\begin{Verbatim}[frame=single]
+class Person(var firstName: String, var lastName: String)
+\end{Verbatim}
+
+\subsection{Frontend}\label{subsec:ts-frontend}
+
+React was selected as frontend framework with Material-UI as a design library.\cite{react, material}
+React positions itself as a UI library, which means further libraries such as Axios (client-server communication) and Redux (state management) might be needed.\cite{axios, redux}
