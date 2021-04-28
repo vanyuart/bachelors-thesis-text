@@ -2,17 +2,17 @@
 
 \section{Software architecture}\label{sec:software-architecture}
 
-Software architecture has been proposed with scalability and multiple types of client applications in mind.
-As shown in figure~\ref{fig:high-level-architecture}, server is a standalone application separated from client applications.
-Such separation allows sharing business logic across different client applications without a need of rewrite.
-Another benefit is the simplicity of scaling.
-New instance of the server application might be deployed behind load balancer as needed.
-
 \begin{figure}[h!]
     \includegraphics[width=0.75\textwidth]{images/high-level-architecture}
     \caption{High-level software architecture}
     \label{fig:high-level-architecture}
 \end{figure}
+
+Software architecture has been proposed with scalability and multiple types of client applications in mind.
+As shown in figure~\ref{fig:high-level-architecture}, server is a standalone application separated from client applications.
+Such separation allows sharing business logic across different client applications without a need of rewrite.
+Another benefit is the simplicity of scaling.
+New instance of the server application might be deployed behind load balancer as needed.
 
 More specifically application is built using Model-View-Controller (MVC) architecture.\cite{wiki-mvc}
 View component in MVC is a representational layer.
