@@ -4,6 +4,11 @@
 
 The most useful resources during the development were Spring Framework documentation and Baeldung.\cite{spring-doc, baeldung}
 
+Project was configured as a multi-module Maven project.
+The next step was security configuration.
+Spring Security uses the chain of responsibility principle for security filters.
+After implementation of Json Web Token provider, new security filter was created and added to the chain.
+
 Development started from the server side.
 First entities of the domain model were implemented.
 Using Hibernate via Spring database schema was generated automatically.
@@ -11,7 +16,3 @@ Spring Data repositories with default operations were defined over entities.
 Services with the core parts of business logic were implemented and unit tested.
 Controllers were created to access created services.
 Postman was used for integration testing of created endpoints.
-
-Following step was security configuration.
-Spring Security uses the chain of responsibility principle for security filters.
-After implementation of Json Web Token provider, new security filter was created and added to the chain.
