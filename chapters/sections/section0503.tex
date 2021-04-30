@@ -3,4 +3,32 @@
 \section{Deployment}\label{sec:deployment}
 %{\color{gray} High-level diagram of software components.}
 
-Dep
+Solution was deployed to the Heroku cloud.\cite{heroku}
+Applications there deployed to "dynos".
+Dyno on Heroku is a virtualized Linux container.
+Containers provide isolated environment which brings several benefits.
+The first is separation from the infrastructure.
+This simplifies the process of deployment.
+The second is the ease of scalability.
+New containers might be deployed as needed to balance the incoming traffic.
+
+Process of the deployment is straightforward.
+Given that Heroku command-line interface is installed and user is authenticated.
+First Heroku should be initialized in the project's root directory\@.
+
+\begin{Verbatim}[frame=single]
+heroku create
+\end{Verbatim}
+
+This will add new Git remote called "heroku" by default.
+Deployment process will start simply by pushing code changes to the heroku remote.
+
+\begin{Verbatim}[frame=single]
+git push heroku master
+\end{Verbatim}
+
+The entire process might be monitored through server logs.
+
+\begin{Verbatim}[frame=single]
+heroku logs --tail -a $APP_NAME$
+\end{Verbatim}

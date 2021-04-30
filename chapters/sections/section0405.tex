@@ -7,13 +7,15 @@ Popularity, community and performance were also taken into account.
 
 \subsection{Server side}\label{subsec:ts-server-side}
 
-Kotlin with Spring framework was selected as server side language and PostreSQL as database.\cite{kotlin, spring, postgresql}
-Kotlin is a modern programming language that compiles to Java.
-Compilation to Java allows to use any Java library while using Kotlin.
+Kotlin with Spring framework was selected as the server side language and PostreSQL as the database.\cite{kotlin, spring, postgresql}
+Kotlin is a modern programming language that compiles to Java compatible bytecode.
+This allows to use any Java library with Kotlin.
+
 There are many reasons to use Kotlin over Java.
-One of them is the null safety.
-Another is the strong influence of functional programming, which brings convenient features such as scope functions, high order functions and lambda expressions.
-Since Kotlin compiles to Java code it provides the same performance while significantly reduces boilerplate code.
+Some of them are null safety, final variables and classes.
+This helps to write more robust code.
+Boilerplate code is significantly reduced in comparison with Java.
+
 Following code snippet is written in Java.\\
 
 \begin{Verbatim}[frame=single]
@@ -49,6 +51,10 @@ Kotlin equivalent for that snipped would be the following.\\
 class Person(var firstName: String, var lastName: String)
 \end{Verbatim}
 
+Another benefit of Kotlin is the strong influence of functional programming, which brings convenient features such as scope functions, high order functions and lambda expressions.
+
+As for the downsides, Kotlin's clean builds take longer to compile.\cite{kotlin-compile}
+
 \subsection{Frontend}\label{subsec:ts-frontend}
 
 React was selected as a frontend framework with Material-UI as a design library.\cite{react, material}
@@ -67,6 +73,6 @@ Benefit of TypeScript is strong typing which JavaScript lacks.\cite{typescript}
 \subsection{Deployment}\label{subsec:ts-deployment}
 
 Heroku cloud platform was selected as a deployment option.
-Simple, minimalistic interface and straightforward deployment via CLI are the benefits over Amazon AWS or Google Cloud.
+Simple, minimalistic interface and straightforward deployment via command-line interface are the benefits over Amazon AWS or Google Cloud.
 Pricing is affordable only for proofs of concept, MVPs and small projects.
 Heroku is not the best choice for large application or high throughput application as the pricing goes 2 to 3 times more expensive than with Amazon AWS\@.

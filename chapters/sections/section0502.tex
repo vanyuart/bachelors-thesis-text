@@ -2,13 +2,19 @@
 
 \section{Web client}\label{sec:web-client}
 
-The most useful resources for the web client development was React and Material-UI documentation.\cite{react, material}
+The most useful resources for the web client development were documentations for React and Material-UI.\cite{react, material}
 
 Web client serves as a representational layer over server endpoints.
-React
-SPA, Virtual DOM
-React Pages -> components
-Components designed as reusable
-Might be reused in mobile app proto
+React web applications are built based on a single-page application (SPA) model.
+The main idea of SPA is to have one HTML page that will dynamically change its content using JavaScript.
+Benefits of this model are faster transitions and more fluent feel overall.
+Downside of SPA is more complicated search engine optimization.
+Search engines web crawlers were historically designed to work with HTML served content, but with SPA content is served with JavaScript.
 
-Implemented client tested against local instance of the server
+In React application there is one HTML file where the main "App" component is placed.
+Using React Router different page components might be served.
+Page components are built by smaller reusable components, e.g.\ list of habits for today might be reused for upcoming habits.
+These reusable components might be also reused in mobile application prototyping.
+
+The implemented client was ad-hoc tested during the development against local instance of the server.
+Later it was tested by users.
