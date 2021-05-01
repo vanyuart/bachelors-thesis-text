@@ -2,11 +2,13 @@
 
 \section{Development testing}\label{sec:dev-testing}
 
-Testing during the development.
+The purpose of development testing is to verify expected behavior and ensure that changes to the application will not break existing functionality.
 
-Server (in-memory db)
+Development testing included unit testing, integration testing and ad-hoc web client testing.
+For server testing in-memory H2 database was used.
+This ensured data consistency every test run.
+Unit tests covered Service components functionality to verify expected behavior.
 
-Services (unit)
-
-Controllers (integration, postman)
-
+Integration testing was done using Postman which is an application for REST API testing.
+This application allows joining multiple requests to test scenarios.
+Benefit of this approach is that the server first can be tested locally and then again after the deployment in production.
