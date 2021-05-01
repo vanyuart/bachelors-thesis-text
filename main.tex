@@ -1,36 +1,38 @@
 %\documentclass[twoside,hidelinks]{ctuthesis}
 \documentclass[twoside]{ctuthesis}
-%\usepackage{hyperref}
 \usepackage{adjustbox}
 \usepackage{fancyvrb}
 
 \ctusetup{
-xdoctype = B,
-xfaculty = F3,
-mainlanguage = english,
-titlelanguage = english,
-title-english = {Application for personal development},
-title-czech = {Aplikace pro podporu osobního rozvoje},
-keywords-english = {personal development, competitiveness},
-keywords-czech = {osobní rozvoj, soutěživost},
-author = {Artem Vanyukhin},
-supervisor = {Ing. Pavel Náplava, Ph.D.},
-fieldofstudy-english = {Software Engineering and Technology},
-day = 1,
-month = 5,
-year = 2021,
-front-specification = true,
-specification-file = zadani.pdf,
+    xdoctype = B,
+    xfaculty = F3,
+    mainlanguage = english,
+    titlelanguage = english,
+    secondlanguage=czech,
+    otherlanguages = {czech},
+    title-english = {Application for personal development},
+    title-czech = {Aplikace pro podporu osobního rozvoje},
+    keywords-english = {personal development, competitiveness},
+    keywords-czech = {osobní rozvoj, soutěživost},
+    author = {Artem Vanyukhin},
+    supervisor = {Ing. Pavel Náplava, Ph.D.},
+    fieldofstudy-english = {Software Engineering and Technology},
+    day = 1,
+    month = 5,
+    year = 2021,
+    front-specification = true,
+    specification-file = zadani.pdf,
 }
 
 \ctuprocess
 
 \begin{thanks}
-    Thanks\ldots
+    I would like to thank my supervisor Ing.\ Pavel Náplava, Ph.D.\ for his guidance and valuable input.
+    I would like to thank my friends for their feedback: Sofya Lartseva, Ryan Awo, Jelizaveta Zimina, Chistiaan Dekkers, Nail Al-Gadyan.
 \end{thanks}
 
 \begin{declaration}
-    I  hereby  declare\ldots
+    I hereby declare that the present thesis was composed by myself and was not previously included in a thesis or dissertation.
 
     In Prague on \monthinlanguage{title} \ctufield{day}, \ctufield{year}
 \end{declaration}
@@ -80,49 +82,49 @@ specification-file = zadani.pdf,
     \bibliographystyle{amsalpha}
     \begin{thebibliography}{99}
         \bibitem{maslow-motivation}
-            A. Maslow.
-            \href{http://psychclassics.yorku.ca/Maslow/motivation.htm}{\emph{"A theory of human motivation."}}
-            Psychological Review, 1943.
+        A. Maslow.
+        \href{http://psychclassics.yorku.ca/Maslow/motivation.htm}{\emph{"A theory of human motivation."}}
+        Psychological Review, 1943.
         \bibitem{maslow-pyramid}
-            \href{https://en.wikipedia.org/wiki/File:Maslow's_Hierarchy_of_Needs2.svg}{\emph{"Maslow's hierarchy of needs."}}
-            Wikipedia.org, 2020.
+        \href{https://en.wikipedia.org/wiki/File:Maslow's_Hierarchy_of_Needs2.svg}{\emph{"Maslow's hierarchy of needs."}}
+        Wikipedia.org, 2020.
         \bibitem{what-is-personal-development}
-            \href{https://www.skillsyouneed.com/ps/personal-development.html}{\emph{What is Personal Development?}}
-            skillsyouneed.com, 2020.
+        \href{https://www.skillsyouneed.com/ps/personal-development.html}{\emph{What is Personal Development?}}
+        skillsyouneed.com, 2020.
         \bibitem{the-four-faces-of-competetition}
-            Orosz G, Tóth-Király I, Büki N, Ivaskevics K, Bőthe B and Fülöp M
-            \href{https://www.frontiersin.org/articles/10.3389/fpsyg.2018.00779/full}{\emph{"The Four Faces of Competition: The Development of the Multidimensional Competitive Orientation Inventory."}}
-            Front.Psychol., 2018.
+        Orosz G, Tóth-Király I, Büki N, Ivaskevics K, Bőthe B and Fülöp M
+        \href{https://www.frontiersin.org/articles/10.3389/fpsyg.2018.00779/full}{\emph{"The Four Faces of Competition: The Development of the Multidimensional Competitive Orientation Inventory."}}
+        Front.Psychol., 2018.
         \bibitem{cit-ryckman-hca}
-            Ryckman, R. M., Libby, C. R., van den Borne, B., Gold, J. A., and Lindner, M. A.
-            \href{https://doi.org/10.1080/00223891.1990.9674097}{\emph{"Construction of a Hypercompetitive Attitude Scale."}}
-            Journal of Personality Assessment, Vol.62, 1994.
+        Ryckman, R. M., Libby, C. R., van den Borne, B., Gold, J. A., and Lindner, M. A.
+        \href{https://doi.org/10.1080/00223891.1990.9674097}{\emph{"Construction of a Hypercompetitive Attitude Scale."}}
+        Journal of Personality Assessment, Vol.62, 1994.
         \bibitem{cit-ryckman-pdca}
-            Ryckman, R. M., Hammer, M., Kaczor, L. M., and Gold, J. A.
-            \href{https://doi.org/10.1207/s15327752jpa6602_15}{\emph{"Construction of a personal development competitive attitude scale."}}
-            Journal of Personality Assessment, Vol.66, 1996.
+        Ryckman, R. M., Hammer, M., Kaczor, L. M., and Gold, J. A.
+        \href{https://doi.org/10.1207/s15327752jpa6602_15}{\emph{"Construction of a personal development competitive attitude scale."}}
+        Journal of Personality Assessment, Vol.66, 1996.
         \bibitem{cit-ryckman-adca} Ryckman, R. M., Thornton, B., and Gold, J. A.
-            \href{https://doi.org/10.3200/JRLP.143.2.175-192}{\emph{"Assessing Competition Avoidance as a Basic Personality Dimension."}}
-            The Journal of Psychology, Vol.143, 2009.
+        \href{https://doi.org/10.3200/JRLP.143.2.175-192}{\emph{"Assessing Competition Avoidance as a Basic Personality Dimension."}}
+        The Journal of Psychology, Vol.143, 2009.
         \bibitem{mobile-vs-desktop}
-            BroadbandSearch.net,
-            \href{https://www.broadbandsearch.net/blog/mobile-desktop-internet-usage-statistics}{\emph{"Mobile Vs. Desktop Internet Usage (Latest 2020 Data)."}}
-            www.broadbandsearch.net, 2020.
+        BroadbandSearch.net,
+        \href{https://www.broadbandsearch.net/blog/mobile-desktop-internet-usage-statistics}{\emph{"Mobile Vs. Desktop Internet Usage (Latest 2020 Data)."}}
+        www.broadbandsearch.net, 2020.
         \bibitem{uloo-logo}
-            Uloo GmbH
-            \href{https://play.google.com/store/apps/details?id=com.uloo}{\emph{"Uloo logo."}}
-            Google Play Market, 2020.
+        Uloo GmbH
+        \href{https://play.google.com/store/apps/details?id=com.uloo}{\emph{"Uloo logo."}}
+        Google Play Market, 2020.
         \bibitem{habitica-logo} HabitRPG, Inc.
-            \href{https://play.google.com/store/apps/details?id=com.habitrpg.android.habitica}{\emph{"Habitica logo."}}
-            Google Play Market, 2020.
+        \href{https://play.google.com/store/apps/details?id=com.habitrpg.android.habitica}{\emph{"Habitica logo."}}
+        Google Play Market, 2020.
         \bibitem{habitify-logo}
-            Unstatic Ltd Co
-            \href{https://play.google.com/store/apps/details?id=co.unstatic.habitify}{\emph{"Habitify logo."}}
-            Google Play Market, 2020.
+        Unstatic Ltd Co
+        \href{https://play.google.com/store/apps/details?id=co.unstatic.habitify}{\emph{"Habitify logo."}}
+        Google Play Market, 2020.
         \bibitem{ticktick-logo}
-            Appest Inc.
-            \href{https://play.google.com/store/apps/details?id=com.ticktick.task}{\emph{"TickTick logo."}}
-            Google Play Market, 2020.
+        Appest Inc.
+        \href{https://play.google.com/store/apps/details?id=com.ticktick.task}{\emph{"TickTick logo."}}
+        Google Play Market, 2020.
         \bibitem{habitshare-logo}
         Luke Bickston
         \href{https://play.google.com/store/apps/details?id=com.habitshareapp}{\emph{"HabitShare logo."}}
