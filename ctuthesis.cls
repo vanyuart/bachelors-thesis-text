@@ -13,7 +13,7 @@
 % but at the very same time, it's descriptive.
 
 % The core of the class.
-\input{template/ctuth-core.tex}
+\input{ctuth-core.tex}
 
 % Process class keys (and call the trigger)
 \ProcessKeysOptions { ctuthesis }
@@ -38,8 +38,8 @@
 	\makeatletter
 	\ExplSyntaxOn
 	% Load the two files
-	\input{template/ctuth-pkg.tex}
-	\input{template/ctuth-templates.tex}
+	\input{ctuth-pkg.tex}
+	\input{ctuth-templates.tex}
 	\ExplSyntaxOff
 	\makeatother
 	% Once \ctuprocess is called, we disable keys marked 'nop'
@@ -55,7 +55,7 @@
 \DeclareDocumentCommand \ctuprocess@check { } { \msg_error:nn { ctuthesis } { ctuprocess-none } }
 \AtBeginDocument{\ctuprocess@check}
 
-\input{template/ctuth-names.tex}
+\input{ctuth-names.tex}
 
 
 
