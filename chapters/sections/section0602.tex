@@ -2,12 +2,54 @@
 
 \section{User testing}\label{sec:user-testing}
 
-UAC testing
+The goal of the user testing is to identify usability issues and critical application design flaws.
+In given context, a critical design flaw would mean that some core feature of idea of the application will make application unusable for a significant amount of users.
+Five users were familiarized with the application under supervision using steps from the list below.
 
-Target
+\begin{enumerate}
+    \item Create an account
+    \item Sign in to your account
+    \item Create a habit
+    \item Complete some habits for today
+    \item Try to edit your habit (change days of week, times a day etc.)
+    \item Create a goal
+    \item Mark some goal tasks as finished
+    \item Try to edit your goal (add tasks, change order etc.)
+    \item Add a new friend (try typing username 'artem')
+    \item Check your friend requests on "Friends" page
+    \item After friend request accepted check "Activities" page for friend's activities
+    \item Check "Statistics" page
+    \item On "Statistics" page generate a habit to fill the graph
+    \item Delete generated habit "Statistics test"
+\end{enumerate}
 
-Questions
+After familiarization session users were left to use the application for the next week.
+Some bugs related to streak reset and statistics calculation were found during user testing.
+Below is the list of selected user notes order by priority from the most important.
+Some was not included as they were caused by the lack of "Profile" page which was in the design, but was not yet implemented.
 
-Feedback
+\begin{enumerate}
+    \item Edit progress from previous days.
+        This request will help to keep users engaged in case they forget to mark their progress.
+        Otherwise, they will lose the streak and might as well lose interest in the application.
+        It is possible to implement this feature with current domain model as the information about each habit fulfillment for each day is kept in "Habit daily progress" entity.
+    \item Leaderboards of habits fulfillment.
+        This request works well with the idea of social engagement.
+        Deeper analysis of habits with shared progress between users is needed.
+    \item Groups of users.
+        This request is a natural development of friend list idea.
+        Users should be able to create groups where they could share habits, work on them together and see each other progress.
+        The idea of leaderboards works well with this request.
+    \item Counter on habits.
+        Currently, when habit has multiple repeats, after marking one done another will popup.
+        Adding counter that will show how many repeats are done and how many more to go will improve user experience.
+        This request could be simply implemented with current domain model.
+    \item There should be a feature of occasionally doing more repeats of a habit.
+        There is no simple way to mark occasionally more repeats on some habits.
+        This request requires additional analysis before implementation.
+\end{enumerate}
 
-Conclusion
+In conclusion, user testing helped to discover some bugs and gave several ideas to improve the application.
+All users agreed on the fact that the main way of using this application would be via the mobile client.
+No critical design flaws were identified during user testing.
+Collected information would be valuable for the future implementation of the mobile client as well as improvement of current web client.
