@@ -10,14 +10,14 @@
 
 Software architecture has been proposed with scalability and multiple types of client applications in mind.
 As shown in figure~\ref{fig:high-level-architecture}, server is a standalone application separated from client applications.
-Such separation allows sharing business logic across different client applications without a need of rewrite.
+Such separation allows sharing business logic across different client applications without the need of a rewrite.
 Another benefit is the simplicity of scaling.
 New instance of the server application might be deployed behind load balancer as needed.
 
 More specifically application is built using Model-View-Controller (MVC) architecture.\cite{wiki-mvc}
 View component in MVC is a representational layer.
 User interacts with the application through mentioned layer.
-In case of this application View component is represented by client applications.
+In this instance, application View component is represented by client applications.
 Model component represents business logic and Controller serves to bind View and Model.
 Model and Controller components are encapsulated in server part of this application.
 
@@ -36,5 +36,7 @@ Other entities Repositories should be accessed via their Service component, henc
 Complex business logic scenarios with several Service components calls might be encapsulated using the facade design pattern.
 Controller creates API endpoint mapping, e.g.\ in www.domain.com/users '/users' is an endpoint mapping.
 
-Described architecture is supported out of the box by major web development frameworks as Spring (Java/Kotlin), Django (Python), Rails (Ruby).\cite{spring,django,ruby} etc.
-This, alongside with preservation of the single-responsibility principle~\cite{wiki-srp} enforced by the idea of MVC, allows for rapid development of maintainable applications.
+Described architecture is supported out of the box by major web development frameworks
+as Spring (Java/Kotlin), Django (Python), Rails (Ruby).\cite{spring,django,ruby} etc.
+This, alongside with preservation of the single-responsibility principle~\cite{wiki-srp} enforced by the idea of MVC,
+allows for rapid development of maintainable applications.

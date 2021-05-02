@@ -7,7 +7,7 @@ Popularity, community and performance were also taken into account.
 
 \subsection{Server side}\label{subsec:ts-server-side}
 
-Kotlin with Spring framework was selected as the server side language and PostreSQL as the database.\cite{kotlin, spring, postgresql}
+Kotlin with Spring framework was selected as the server side language and PostgreSQL as the database.\cite{kotlin, spring, postgresql}
 Kotlin is a modern programming language that compiles to Java compatible bytecode.
 This allows to use any Java library with Kotlin.
 
@@ -46,24 +46,27 @@ public class Person {
 }
 \end{Verbatim}
 
-Kotlin equivalent for that snipped would be the following.\\
+Kotlin equivalent for that snippet would be the following.\\
 \begin{Verbatim}[frame=single]
 class Person(var firstName: String, var lastName: String)
 \end{Verbatim}
 
-Another benefit of Kotlin is the strong influence of functional programming, which brings convenient features such as scope functions, high order functions and lambda expressions.
+Another benefit of Kotlin is the strong influence of functional programming,
+resulting in convenient features such as scope functions, high order functions and lambda expressions.
 
-As for the downsides, Kotlin's clean builds take longer to compile.\cite{kotlin-compile}
+In regard to downsides, Kotlin's clean builds take longer to compile.\cite{kotlin-compile}
 
 \subsection{Frontend}\label{subsec:ts-frontend}
 
 React was selected as a frontend framework with Material-UI as a design library.\cite{react, material}
-React is developed by Facebook and positions itself as a UI library, which means further libraries such as Axios (client-server communication) and Redux (state management) might be needed.\cite{axios, redux}
+React is developed by Facebook and positions itself as a UI library, which means further libraries
+such as Axios (client-server communication) and Redux (state management) might be needed.\cite{axios, redux}
 Material-UI is a library with React components built according to Google's UI design guidelines.
-Combination of React with Material-UI is responsive out of the box, which means web client will be displayed correctly on mobile devices without an extra amount of work.
+Combination of React with Material-UI is responsive out of the box, which means web client will be displayed
+correctly on mobile devices without an extra amount of work.
 
-Another point of using React is relative simplicity of the future mobile application prototyping with React Native.\cite{react-native}
-React Native is a UI library that allows to write UI for Android and iOS mobile devices.
+Also, it is relatively less complicated to prototype a mobile client using React Native in the future.\cite{react-native}
+React Native is a UI library that allows the creation of UI for Android and iOS mobile devices.
 Code written in React Native is very similar to React code, some components could even be reused.
 React Native code then transpiled to platform native UI code for Android or iOS\@.
 
@@ -75,4 +78,5 @@ Benefit of TypeScript is strong typing which JavaScript lacks.\cite{typescript}
 Heroku cloud platform was selected as a deployment option.
 Simple, minimalistic interface and straightforward deployment via command-line interface are the benefits over Amazon AWS or Google Cloud.
 Pricing is affordable only for proofs of concept, MVPs and small projects.
-Heroku is not the best choice for large application or high throughput application as the pricing goes 2 to 3 times more expensive than with Amazon AWS\@.
+Heroku is not the best choice for large application or high throughput application as the pricing goes 2 to 3
+times more expensive than with Amazon AWS.\cite{heroku-vs-aws}

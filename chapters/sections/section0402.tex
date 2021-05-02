@@ -3,7 +3,7 @@
 \section{Domain model}\label{sec:domain-model}
 
 This section will describe entities of the application domain model displayed in figure below.
-Some technical information, like data types, are omitted for brevity.
+Some technical information such as data types are omitted for brevity.
 Each entity has information about creation date, modification date etc.
 
 \begin{figure}[h]
@@ -15,18 +15,18 @@ Each entity has information about creation date, modification date etc.
 
 \subsection{User}\label{subsec:user}
 
-User entity consists of a minimum required attributes in order to simplify registration process for end-user.
+User entity consists of minimum required attributes in order to simplify registration process for end-user.
 Recursive relation represents friendship between users, which is required for activity sharing.
-Goal plans, goals and habits are always owned by one user and might be shared with many users.
+Goal plans, goals and habits are always owned by one user and might be shared with other users.
 Sharing is used for displaying private plans, goals and habits with specific users.
 
 \subsection{Goal plan}\label{subsec:goal-plan}
 
 Goal plan serves as a blueprint for a goal.
-This separation of a plan and a goal allows users to create and to share not only their progress, but also plans themselves.
-Possible use case would be the following: a user is proficient in a specific field or skill that other users would like to learn or gain.
+This separation of a plan and a goal allows users to create and to share not only their progress but also plans.
+Possible use case would be as follows: a user is proficient in a specific field or skill that others' would like to learn or gain.
 They create a goal plan with tasks that contains instructions and share it with any amount of users.
-Other users then able to start goal pursuing process using this shared plan.
+Other users then are able to start a goal pursuing process using this shared plan.
 
 \subsection{Goal}\label{subsec:goal}
 
@@ -50,7 +50,7 @@ Habit is a tool for managing simple and repetitive targets.
 \subsection{Habit schedule}\label{subsec:habit-schedule}
 
 Each habit has a schedule.
-At first it filled with default values, but it is possible for users to change them.
+Initially, it is filled with default values but possible for users to change them.
 
 \subsection{Habit daily progress}\label{subsec:habit-daily-progress}
 
@@ -60,9 +60,9 @@ It is then used for statistics calculation.
 \subsection{Activity}\label{subsec:activity}
 
 This entity holds data about user activities on goals and habits.
-When goal or habit shared with user, they will see related activities.
+When a goal or habit is shared with a user, they will see related activities.
 
 \subsection{Comment}\label{subsec:comment}
 
-It is possible to comment activities in application and reply to commentaries.
-Everyone who has access to an activity can see all the commentaries.
+It is possible to comment on activities in application and reply to commentaries.
+All users with access to activities, can see others' commentaries.

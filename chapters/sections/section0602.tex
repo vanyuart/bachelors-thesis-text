@@ -3,7 +3,8 @@
 \section{User testing}\label{sec:user-testing}
 
 The goal of the user testing is to identify usability issues and critical application design flaws.
-In given context, a critical design flaw would mean that some core feature of idea of the application will make application unusable for a significant amount of users.
+In given context, a critical design flaw would mean that some core features of the application
+will make application unusable for a significant amount of users.
 Five users were familiarized with the application under supervision using steps from the list below.
 
 \begin{enumerate}
@@ -31,21 +32,21 @@ Some was not included as they were caused by the lack of "Profile" page which wa
 \begin{enumerate}
     \item \textbf{Edit progress from previous days.}\\
         This request will help to keep users engaged in case they forget to mark their progress.
-        Otherwise, they will lose the streak and might as well lose interest in the application.
-        It is possible to implement this feature with current domain model as the information about each habit fulfillment for each day is kept in "Habit daily progress" entity.
+        They will lose the streak and might as well lose interest in the application otherwise.
+        It is possible to implement this feature with the current domain model, as the information about each habit fulfillment for each day is kept in "Habit daily progress" entity.
     \item \textbf{Leaderboards of habits fulfillment.}\\
         This request works well with the idea of social engagement.
         Deeper analysis of habits with shared progress between users is needed.
     \item \textbf{Groups of users.}\\
-        This request is a natural development of friend list idea.
+        This request is a natural development of the friend list idea.
         Users should be able to create groups where they could share habits, work on them together and see each other progress.
-        The idea of leaderboards works well with this request.
+        The concept of leaderboards works well with this request.
     \item \textbf{Counter on habits.}\\
-        Currently, when habit has multiple repeats, after marking one done another will popup.
-        Adding counter that will show how many repeats are done and how many more to go will improve user experience.
-        This request could be simply implemented with current domain model.
+        Currently, when habit is repeated multiple times after marking one as done, the following will popup.
+        Adding a counter that will show how many repeats are done and how many more to go will improve user experience.
+        This request could be simply implemented with the current domain model.
     \item \textbf{There should be a feature of occasionally doing more repeats of a habit.}\\
-        There is no simple way to mark occasionally more repeats on some habits.
+        There is no simple way to occasionally mark more repeats on a habit.
         This request requires additional analysis before implementation.
 \end{enumerate}
 
