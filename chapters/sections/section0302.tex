@@ -2,7 +2,7 @@
 
 \section{Data collection}\label{sec:data-collection}
 
-Data collection was done using Google search engine.
+Data collection was done using Google search engine as it was the most popular search engine in 2020 with over 90\% market share.\cite{google-market-share}
 The first step was to find applications using following keywords: "personal development apps", "habit tracker", "self-improvement apps".
 The top five results for each keyword were used to gain the initial dataset.
 The next step was to manually filter gathered data.
@@ -20,18 +20,18 @@ The final step was to remove applications that are very similar in terms of inte
     \begin{adjustbox}{width=\textwidth}
         \begin{ctucolortab}
             \begin{tabular}{llllll}
-                \bfseries Action & \bfseries K1 & \bfseries K2 & \bfseries K3 & \bfseries Difference & \bfseries Total results \\\Midrule
-                Initial dataset & 52 & 38 & 62 & +152 & 152\\
-                Duplicates & 46 & 25 & 23 & -58 & 94\\
-                Sport oriented & 41 & 23 & 22 & -8 & 86\\
-                Meditation oriented & 38 & 19 & 19 & -10 & 76\\
-                Brain training oriented & 25 & 16 & 18 & -17 & 59\\
-                Topics oriented & 15 & 16 & 10 & -18 & 41\\
-                Personal care oriented & 5 & 11 & 7 & -18 & 23\\
-                Business and productivity oriented & 4 & 11 & 5 & -3 & 20\\
-                Bad habits oriented & 4 & 10 & 1 & -5 & 15\\
-                Single platform & 2 & 5 & 1 & -7 & 8\\
-                Similar applications & 2 & 2 & 1 & -3 & 5\\
+                \bfseries Action & \bfseries K1 & \bfseries K2 & \bfseries K3 & \bfseries Total results & \bfseries Difference \\\Midrule
+                Initial dataset & 52 & 38 & 62  & 152 & +152\\
+                Duplicates & 46 & 25 & 23  & 94 & -58\\
+                Sport oriented & 41 & 23 & 22  & 86 & -8\\
+                Meditation oriented & 38 & 19 & 19  & 76 & -10\\
+                Brain training oriented & 25 & 16 & 18  & 59 & -17\\
+                Topics oriented & 15 & 16 & 10  & 41 & -18\\
+                Personal care oriented & 5 & 11 & 7  & 23 & -18\\
+                Business and productivity oriented & 4 & 11 & 5  & 20 & -3\\
+                Bad habits oriented & 4 & 10 & 1  & 15 & -5\\
+                Single platform & 2 & 5 & 1  & 8 & -7\\
+                Similar applications & 2 & 2 & 1  & 5 & -3\\
                 \bottomrule
                 \multicolumn{6}{1}{K1="Personal development apps", K2="Habit tracker", K3="Self-improvement apps"}
             \end{tabular}
@@ -41,5 +41,9 @@ The final step was to remove applications that are very similar in terms of inte
     \label{tab:dataset-filtering}
 \end{table}
 
-Details of dataset filtering process are described in Table 3.1.
 The result of filtering is 5 applications that will be analyzed in the next section.
+Details of the dataset filtering process are described in Table~\ref{tab:dataset-filtering}.
+\textit{Action} column contains the removal criteria during a filtration step.
+\textit{K1} to \textit{K3} columns contain the amount of applications by a keyword.
+\textit{Total results} column contains the sum of K1, K2 and K3 columns.
+\textit{Difference} column contains the difference of total results against previous row.
