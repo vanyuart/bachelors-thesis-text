@@ -12,6 +12,6 @@ Based on this analysis the first version of application was implemented and test
 
 ## Web
 
-__Was written very fast => code quality is__ :shit:
+_Was written very fast => code quality is_ :shit:
 
 https://pda-web.herokuapp.com/
