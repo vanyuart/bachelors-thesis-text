@@ -11,4 +11,7 @@ Based on this analysis the first version of application was implemented and test
 [PDF](Applicaiton for personal development.pdf)
 
 ## Web
+
+__Was written very fast => code quality is__ :shit:
+
 https://pda-web.herokuapp.com/
