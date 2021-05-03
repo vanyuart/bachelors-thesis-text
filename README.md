@@ -8,7 +8,7 @@ and proposition of a new application.
 Based on this analysis the first version of application was implemented and tested.
 
 ## Text
-[PDF](Applicaiton for personal development.pdf)
+[PDF](Applicaiton_for_personal_development_Artem_Vanyukhin.pdf)
 
 ## Web
 
